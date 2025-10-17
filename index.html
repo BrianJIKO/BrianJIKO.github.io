@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Dios Azul - Un milagro en Bogotá</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+    <!-- Pantalla de Carga -->
+    <div id="preloader" class="preloader-wrapper">
+        <div class="e-loadholder">
+            <div class="m-loader">
+                <span class="e-text">CARGANDO<br>EL MITO</span>
+            </div>
+        </div>
+        <div id="particleCanvas-Blue"></div>
+        <div id="particleCanvas-White"></div>
+    </div>
+
+    <!-- Página Principal -->
+    <div id="mainPage" class="main-page">
+        <!-- Header con Navegación -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="images/Logo.png" alt="La espuma del mito" class="header-logo">
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#animacion" class="nav-link">Animación</a>
+                    <a href="#comic" class="nav-link active">Cómic</a>
+                    <a href="#videojuego" class="nav-link">Videojuego</a>
+                    <a href="#voces" class="nav-link">Voces</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="text-section">
+                <h1 id="comicTitle" class="split-text-title">Cómic Digital</h1>
+                <p class="description typewriter" id="typewriterText" data-text=" El cómic de El Dios Azul narra la transformación de Julián, un joven común que descubre el poder oculto del Jabón Rey. Entre calles grises y leyendas urbanas, la espuma revela un mito ancestral que purificará la ciudad."></p>
+            </div>
+
+            <div class="comic-preview">
+                <div class="comic-cover-container" id="comicCover">
+                    <img src="images/Portada comic.jpg" alt="Portada El Dios Azul" class="comic-cover">
+                </div>
+                <button id="readBtn" class="read-btn">
+                    Leer
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <img src="images/Logo.png" alt="La espuma del mito" class="footer-logo">
+                
+                <div class="footer-info">
+                    <p class="footer-description">
+                        Proyecto transmedia inspirado en la leyenda del jabón REY. Animación, cómic, videojuego y voces que transforman la ciudad en mito.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Proximamente: Animación</a>
+                    <a href="#" class="footer-link">Cómic digital</a>
+                    <a href="#" class="footer-link">Proximamente: Fundamenta Videojuego</a>
+                    <a href="#" class="footer-link">Proximamente: Fundamenta Vallas de Bogotá</a>
+                </div>
+
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <img src="images/logo tik tok.png" alt="TikTok">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="images/logo instragram.png" alt="Instagram">
+                    </a>
+                </div>
+
+                <p class="copyright">© 2025 La espuma del mito. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Visor de Cómic con Efecto 3D -->
+    <div id="comicViewer" class="comic-viewer hidden">
+        <button id="closeBtn" class="close-btn">×</button>
+        
+        <div class="comic-container">
+            <button id="prevBtn" class="nav-btn prev-btn">
+                <img src="images/FlechaIzquierda.png" alt="Anterior">
+            </button>
+
+            <div class="book-container">
+                <!-- El libro se construye dinámicamente con JavaScript -->
+                <div id="book" class="book"></div>
+            </div>
+
+            <button id="nextBtn" class="nav-btn next-btn">
+                <img src="images/FlechaDerecha.png" alt="Siguiente">
+            </button>
+        </div>
+
+        <div class="page-counter">
+            <span id="pageInfo"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
