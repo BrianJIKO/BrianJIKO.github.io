@@ -280,15 +280,28 @@ class FlipBook {
         }
     }
     
+    hideSwipeIndicator() {
+        const swipeIndicator = document.querySelector('.swipe-indicator');
+        if (swipeIndicator && swipeIndicator.style.display !== 'none') {
+            swipeIndicator.style.opacity = '0';
+            swipeIndicator.style.transition = 'opacity 0.3s ease';
+            setTimeout(() => {
+                swipeIndicator.style.display = 'none';
+            }, 300);
+        }
+    }
+    
     setupEvents() {
         // Botón siguiente
         this.elems.buttons.next.addEventListener('click', () => {
             this.turnPage(1);
+            this.hideSwipeIndicator();
         });
         
         // Botón anterior
         this.elems.buttons.prev.addEventListener('click', () => {
             this.turnPage(-1);
+            this.hideSwipeIndicator();
         });
         
         // Navegación con teclado
@@ -346,6 +359,16 @@ class FlipBook {
                     } else {
                         this.turnPage(-1); // Swipe derecha = anterior
                     }
+                    
+                    // Ocultar indicador de deslizamiento al primer swipe
+                    const swipeIndicator = document.querySelector('.swipe-indicator');
+                    if (swipeIndicator && swipeIndicator.style.display !== 'none') {
+                        swipeIndicator.style.opacity = '0';
+                        swipeIndicator.style.transition = 'opacity 0.3s ease';
+                        setTimeout(() => {
+                            swipeIndicator.style.display = 'none';
+                        }, 300);
+                    }
                 }
             }
             isSwiping = false;
@@ -387,6 +410,19 @@ function openComicViewer() {
     } else {
         flipBook.reset();
     }
+    
+    // Mostrar indicador de deslizamiento en móvil
+    if (isMobile()) {
+        const swipeIndicator = document.querySelector('.swipe-indicator');
+        if (swipeIndicator) {
+            swipeIndicator.style.display = 'block';
+            // Ocultar después de 4 segundos
+            setTimeout(() => {
+                swipeIndicator.style.opacity = '0';
+                swipeIndicator.style.transition = 'opacity 0.5s ease';
+            }, 4000);
+        }
+    }
 }
 
 // Detectar cambio de orientación o tamaño de ventana
@@ -408,6 +444,13 @@ window.addEventListener('resize', () => {
 function closeComicViewer() {
     comicViewer.classList.add('hidden');
     document.body.style.overflow = 'auto';
+    
+    // Resetear el indicador de deslizamiento para la próxima vez
+    const swipeIndicator = document.querySelector('.swipe-indicator');
+    if (swipeIndicator) {
+        swipeIndicator.style.display = 'none';
+        swipeIndicator.style.opacity = '1';
+    }
 }
 
 // Event Listeners

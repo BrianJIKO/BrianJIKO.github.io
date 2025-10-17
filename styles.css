@@ -525,6 +525,31 @@ body.loading .main-page {
     transform: rotate(90deg);
 }
 
+/* Indicador de deslizamiento para móvil */
+.swipe-indicator {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 1002;
+    display: none;
+    animation: fadeInOutSwipe 4s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInOutSwipe {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+}
+
 .comic-container {
     display: flex;
     align-items: center;
@@ -909,7 +934,7 @@ body.loading .main-page {
     }
 }
 
-/* Móviles */
+    /* Móviles */
 @media (max-width: 480px) {
     .header-content {
         padding: 10px 20px;
@@ -940,6 +965,11 @@ body.loading .main-page {
 
     .header-logo {
         height: 70px;
+    }
+
+    /* Mostrar indicador de deslizamiento en móvil */
+    .swipe-indicator {
+        display: block;
     }
 
     /* LIBRO OPTIMIZADO PARA MÓVIL - UNA SOLA PÁGINA */
