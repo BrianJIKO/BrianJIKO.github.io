@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Lectura de CVs con IA | Brian Jiménez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="case-header">
+        <a href="index.html" class="back-btn">
+            ← Volver
+        </a>
+        <div style="font-weight: 700; color: var(--text-dark);">Caso de Estudio</div>
+        <a href="#" class="download-cv-btn">CV</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="case-category">
+            WEB + INTELIGENCIA ARTIFICIAL
+        </div>
+        <h1 class="case-title">Plataforma de Lectura de CVs con IA</h1>
+        
+        <div class="case-meta">
+            <div class="meta-item">
+                <div class="meta-label">Rol:</div>
+                <div class="meta-value">UX/UI Designer – Front-End Developer</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Duración:</div>
+                <div class="meta-value">3 meses</div>
+            </div>
+        </div>
+
+        <div class="case-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">React</span>
+            <span class="tag">Python</span>
+            <span class="tag">OpenAI API</span>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="video-section">
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="images/Videos/Sistema inteligente de filtrado de CVs.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Context & Problem -->
+    <section class="context-section">
+        <div class="context-container">
+            <div class="context-content">
+                <div class="section-label">CONTEXTO DEL PROYECTO</div>
+                <h2 class="section-title">Contexto del Proyecto</h2>
+                <p class="section-text">
+                    Este proyecto surge de la necesidad de optimizar el proceso de reclutamiento en empresas tecnológicas. Los equipos de recursos humanos reciben cientos de CVs diariamente, lo que hace imposible un análisis cuidadoso y consistente de cada candidato.
+                </p>
+                <p class="section-text">
+                    La plataforma fue desarrollada como solución integral para automatizar y mejorar este proceso, permitiendo a los reclutadores configurar criterios de evaluación personalizados y obtener análisis automáticos con métricas claras y accionables.
+                </p>
+            </div>
+
+            <div class="problem-content">
+                <div class="problem-box">
+                    <div class="problem-icon">⚠️</div>
+                    <div class="section-label">PROBLEMA IDENTIFICADO</div>
+                    <h3 class="section-title" style="font-size: 1.6rem;">El Problema</h3>
+                    <p class="section-text">
+                        Los reclutadores enfrentan sobrecarga de trabajo analizando currículums de forma manual, lo que resulta en evaluaciones inconsistentes y pérdida de candidatos potenciales.
+                    </p>
+                    <ul class="problem-list">
+                        <li>Tiempo excesivo dedicado a filtrado manual de CVs</li>
+                        <li>Falta de criterios consistentes entre evaluadores</li>
+                        <li>Dificultad para identificar habilidades clave rápidamente</li>
+                        <li>Pérdida de candidatos calificados por análisis superficial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objective -->
+    <section class="objective-section">
+        <div class="objective-container">
+            <div>
+                <div class="objective-icon">🎯</div>
+                <div class="section-label">OBJETIVO UX</div>
+                <h2 class="section-title">Objetivo UX</h2>
+                <p class="section-text">
+                    Diseñar una interfaz intuitiva que permita a reclutadores configurar criterios de evaluación personalizados y obtener análisis automáticos de CVs con métricas claras y accionables.
+                </p>
+                
+                <ul class="objectives-list">
+                    <li>Reducir tiempo de análisis de CVs en un 70%</li>
+                    <li>Proporcionar métricas personalizables por rol</li>
+                    <li>Crear un dashboard intuitivo y visualmente claro</li>
+                    <li>Facilitar la toma de decisiones con datos</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="section-label">MI ROL Y RESPONSABILIDADES</div>
+                <h3 class="section-title" style="font-size: 1.8rem;">Mi Rol y Responsabilidades</h3>
+                <ul class="responsibilities-list">
+                    <li>Investigación de usuarios con reclutadores</li>
+                    <li>Arquitectura de información del dashboard</li>
+                    <li>Diseño de flujos de usuario en Figma</li>
+                    <li>Prototipado de alta fidelidad</li>
+                    <li>Desarrollo front-end con React</li>
+                    <li>Integración con API de IA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process-section">
+        <div class="process-container">
+            <div class="process-header">
+                <div class="section-label">METODOLOGÍA</div>
+                <h2 class="section-title">Proceso de Diseño</h2>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon-wrapper">👥</div>
+                    <h4>Investigación</h4>
+                    <p>Entrevistas con 5 reclutadores para entender su flujo de trabajo actual y pain points principales.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon-wrapper">📊</div>
+                    <h4>Arquitectura</h4>
+                    <p>Definición de estructura de información: dashboard, vista de candidatos, reportes.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon-wrapper">✏️</div>
+                    <h4>Wireframes</h4>
+                    <p>Bocetos de baja fidelidad para validar flujos antes de invertir en diseño visual detallado.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon-wrapper">🎨</div>
+                    <h4>Diseño UI</h4>
+                    <p>Sistema de diseño con componentes reutilizables, tipografía clara, paleta de colores profesional.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon-wrapper">💻</div>
+                    <h4>Desarrollo</h4>
+                    <p>Implementación en React con integración a backend Python y API de OpenAI para análisis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="process-header">
+                <div class="section-label">CARACTERÍSTICAS PRINCIPALES</div>
+                <h2 class="section-title">Funcionalidades Clave</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h4>Upload masivo de CVs con análisis automático</h4>
+                    <p>Carga múltiples CVs simultáneamente y recibe análisis instantáneo basado en IA.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h4>Configuración de métricas personalizadas por vacante</h4>
+                    <p>Define criterios específicos de evaluación según las necesidades de cada posición.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h4>Dashboard con visualización de candidatos rankeados</h4>
+                    <p>Interfaz visual intuitiva que muestra candidatos ordenados por compatibilidad.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h4>Filtros avanzados por habilidades, experiencia y educación</h4>
+                    <p>Sistema de filtrado robusto para encontrar candidatos específicos rápidamente.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h4>Exportación de reportes para decisiones de equipo</h4>
+                    <p>Genera reportes detallados para compartir con stakeholders y facilitar decisiones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="results-section">
+        <div class="results-container">
+            <div class="section-label">IMPACTO DEL PROYECTO</div>
+            <h2 class="section-title">Resultados</h2>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">📊</div>
+                    <div class="result-number">70% menos tiempo</div>
+                    <div class="result-label">70% menos tiempo</div>
+                    <div class="result-description">Reducción en tiempo de análisis inicial de candidatos</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">✓</div>
+                    <div class="result-number">Criterios consistentes</div>
+                    <div class="result-label">Criterios consistentes</div>
+                    <div class="result-description">Evaluación objetiva basada en métricas definidas</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">🎯</div>
+                    <div class="result-number">Dashboard intuitivo</div>
+                    <div class="result-label">Dashboard intuitivo</div>
+                    <div class="result-description">Interfaz que reclutadores adoptaron sin entrenamiento</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learnings -->
+    <section class="learnings-section">
+        <div class="learnings-container">
+            <div class="process-header">
+                <div class="section-label">REFLEXIÓN</div>
+                <h2 class="section-title">Aprendizajes Clave</h2>
+            </div>
+
+            <div class="learning-item">
+                <div class="learning-icon">💡</div>
+                <div class="learning-text">
+                    La importancia de validar con usuarios reales antes de diseñar en alta fidelidad. Las entrevistas iniciales revelaron necesidades que no hubiera anticipado.
+                </div>
+            </div>
+
+            <div class="learning-item">
+                <div class="learning-icon">💡</div>
+                <div class="learning-text">
+                    Cómo balancear automatización con control del usuario. Los reclutadores querían eficiencia, pero también necesitaban sentir que mantenían el control del proceso.
+                </div>
+            </div>
+
+            <div class="learning-item">
+                <div class="learning-icon">💡</div>
+                <div class="learning-text">
+                    El valor de un sistema de diseño consistente para desarrollo eficiente. Crear componentes reutilizables aceleró significativamente la implementación.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="section-label">¿TE INTERESA ESTE PROYECTO?</div>
+            <h2 class="section-title">Siguiente proyecto</h2>
+            <p class="section-text">
+                Explora más casos de estudio o contáctame para conversar sobre cómo puedo agregar valor a tu equipo.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="caso-arbot.html" class="btn-secondary">Siguiente proyecto →</a>
+                <a href="index.html#contacto" class="btn-primary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="case-study.js"></script>
+</body>
+</html>

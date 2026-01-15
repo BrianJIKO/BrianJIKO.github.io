@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Jiménez Korzelius | UX/UI Designer & Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+    <video autoplay muted playsinline id="preloader-video">
+        <source src="images/Videos/Logo2.mp4" type="video/mp4">
+    </video>
+    <audio id="preloader-audio" autoplay>
+        <source src="images/Videos/SonidoLOGO.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo">
+                BJK <span class="logo-dot"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" class="btn-cv">
+                    <img src="images/Icons/file.png" alt="Download" class="btn-icon"> CV
+                </a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <img src="images/Icons/UNI.png" alt="Lightning" class="badge-icon-img">
+                    Buscando prácticas profesionales
+                </div>
+                <h1>
+                    Brian Jiménez
+                    <span class="highlight">Korzelius</span>
+                </h1>
+                <p class="hero-subtitle">UX/UI Designer | Front-End Developer</p>
+                <p class="hero-description">
+                    Transformo problemas complejos en experiencias digitales claras, usables y centradas en las necesidades reales del usuario.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn-primary">
+                        Ver proyectos 
+                        <img src="images/Icons/Ver.png" alt="Arrow" class="btn-icon">
+                    </a>
+                    <a href="#" class="btn-secondary">
+                        <img src="images/Icons/Descarga.gif" alt="Download" class="btn-icon">
+                        Descargar CV
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Casos UX</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Tecnologías</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">User-Centered</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="main-card">
+                    <div class="card-image">
+                        <img src="images/Principal.png" alt="Conceptual Head">
+                    </div>
+                    <div class="floating-badge top-right">
+                        <span class="badge-icon">
+                            <img src="images/Icons/IA_RA_Web.gif" alt="Check">
+                        </span>
+                        <div>
+                            <div style="font-size: 0.75rem; color: #64748B;">IA + RA + Web</div>
+                            <div style="font-size: 0.85rem;">Tecnologías emergentes</div>
+                        </div>
+                    </div>
+                    <div class="floating-badge bottom-left">
+                        <span class="badge-icon">
+                            <img src="images/Icons/Pensamiento UX.gif" alt="Brain">
+                        </span>
+                        <div>
+                            <div style="font-size: 0.75rem; color: #64748B;">Pensamiento UX</div>
+                            <div style="font-size: 0.85rem;">Centrado en usuario</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <img src="images/Icons/Flecha.png" alt="Scroll">
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section class="about" id="sobre-mi">
+        <div class="about-container">
+            <div class="about-image-container">
+                <div class="about-image">
+                    <img src="images/Sobre mí.png" alt="About Me">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="section-label">SOBRE MÍ</div>
+                <h2 class="section-title">Diseñador UX con visión técnica</h2>
+                <p class="about-text">
+                    Soy <strong>Ingeniero en Multimedia</strong> especializado en UX/UI Design y desarrollo front-end. Mi enfoque se centra en <strong>entender las necesidades reales de los usuarios</strong> para crear soluciones que generen impacto.
+                </p>
+                <p class="about-text">
+                    Combino <strong>pensamiento de diseño, investigación de usuarios y habilidades técnicas</strong> para desarrollar interfaces claras, usables y orientadas a resultados. Me apasiona resolver problemas complejos con soluciones simples.
+                </p>
+                <p class="about-text">
+                    Tengo experiencia trabajando con <strong>equipos multidisciplinarios</strong> en proyectos de IA, realidad aumentada y gamificación. Busco <strong>prácticas profesionales</strong> donde pueda aportar valor y seguir creciendo como diseñador UX/UI.
+                </p>
+
+                <div class="skill-badges">
+                    <div class="skill-badge">
+                        <img src="images/Icons/Investigación UX.gif" alt="Icon">
+                        <span>Investigación UX</span>
+                    </div>
+                    <div class="skill-badge">
+                        <img src="images/Icons/Arquitectura Info.gif" alt="Icon">
+                        <span>Arquitectura Info</span>
+                    </div>
+                    <div class="skill-badge">
+                        <img src="images/Icons/Diseño Visual.gif" alt="Icon">
+                        <span>Diseño Visual</span>
+                    </div>
+                    <div class="skill-badge">
+                        <img src="images/Icons/Front-End Dev.gif" alt="Icon">
+                        <span>Front-End Dev</span>
+                    </div>
+                </div>
+
+                <div class="about-buttons">
+                    <a href="#contacto" class="btn-primary">
+                        <img src="images/Icons/ver.png" alt="Mail" class="btn-icon">
+                        Contactar
+                    </a>
+                    <a href="https://www.linkedin.com/in/brian-jimenez-korzelius-28ab1a206/" target="_blank" class="btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section class="projects" id="proyectos">
+        <div class="projects-container">
+            <div class="projects-header">
+                <div class="section-label">CASOS DE ESTUDIO UX</div>
+                <h2 class="section-title">Proyectos destacados</h2>
+                <p class="projects-description">
+                    Cada proyecto es un caso de estudio completo: desde la identificación del problema hasta la solución final, documentando decisiones de diseño y resultados.
+                </p>
+            </div>
+
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Analisis de Cvs.png" alt="Plataforma CV">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <img src="images/Icons/Buscando_practicas.gif" alt="AI" class="category-icon">
+                        Web + Inteligencia Artificial
+                    </div>
+                    <h3 class="project-title">Plataforma de Lectura de CVs con IA</h3>
+                    
+                    <div class="project-detail">
+                        <div class="project-detail-label">Problema</div>
+                        <p class="project-detail-text">
+                            La evaluación de CVs manualmente son criterios inconsistentes.
+                        </p>
+                    </div>
+
+                    <div class="project-detail">
+                        <div class="project-detail-label">Solución</div>
+                        <p class="project-detail-text">
+                            Plataforma que analiza CVs automáticamente según métricas personalizadas por el usuario.
+                        </p>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">IA Research</span>
+                        <span class="tag">UI Design</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+
+                    <div class="project-role">
+                        <strong>Rol:</strong> UX/UI Designer – Front-End Developer
+                    </div>
+
+                    <a href="caso-cvs-ia.html" class="btn-project">
+                        Ver caso completo 
+                        <img src="images/Icons/Investigación.png" alt="Arrow" class="btn-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/AR bot.png" alt="ARBot">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <img src="images/Icons/3d.gif" alt="AR" class="category-icon">
+                        Web + Realidad Aumentada
+                    </div>
+                    <h3 class="project-title">ARBot – Plataforma Educativa Interactiva</h3>
+                    
+                    <div class="project-detail">
+                        <div class="project-detail-label">Problema</div>
+                        <p class="project-detail-text">
+                            Los estudiantes tienen dificultad para comprender conceptos complejos en STEAM.
+                        </p>
+                    </div>
+
+                    <div class="project-detail">
+                        <div class="project-detail-label">Solución</div>
+                        <p class="project-detail-text">
+                            Plataforma con lecciones, videos y quizzes que hacen lo teórico más accesible con AR.
+                        </p>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">WebAR</span>
+                        <span class="tag">Education</span>
+                        <span class="tag">Gamification</span>
+                        <span class="tag">UX</span>
+                    </div>
+
+                    <div class="project-role">
+                        <strong>Rol:</strong> UX/UI Designer
+                    </div>
+
+                    <a href="caso-arbot.html" class="btn-project">
+                        Ver caso completo 
+                        <img src="images/Icons/Investigación.png" alt="Arrow" class="btn-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/JabonREY.png" alt="Jabón REY">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <img src="images/Icons/customer.gif" alt="Game" class="category-icon">
+                        Web + Animación + Gamificación
+                    </div>
+                    <h3 class="project-title">JABÓN REY - Experiencia Transmedia</h3>
+                    
+                    <div class="project-detail">
+                        <div class="project-detail-label">Problema</div>
+                        <p class="project-detail-text">
+                            Necesidad de conectar con audiencias jóvenes de forma inmersiva.
+                        </p>
+                    </div>
+
+                    <div class="project-detail">
+                        <div class="project-detail-label">Solución</div>
+                        <p class="project-detail-text">
+                            Experiencia que combina campaña web, animación y elementos de juego para engagement.
+                        </p>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">Transmedia</span>
+                        <span class="tag">Branding</span>
+                        <span class="tag">Animation</span>
+                        <span class="tag">Narrative UX</span>
+                    </div>
+
+                    <div class="project-role">
+                        <strong>Rol:</strong> UX/UI Designer
+                    </div>
+
+                    <a href="caso-jabon-rey.html" class="btn-project">
+                        Ver caso completo 
+                        <img src="images/Icons/Investigación.png" alt="Arrow" class="btn-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Paginas web.png" alt="Web Development">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <img src="images/Icons/monitor.gif" alt="Code" class="category-icon">
+                        Desarrollo Front-End
+                    </div>
+                    <h3 class="project-title">Páginas Web (HTML, CSS, JS)</h3>
+                    
+                    <div class="project-detail">
+                        <div class="project-detail-label">Problema</div>
+                        <p class="project-detail-text">
+                            Necesidad de presencia web profesional para diferentes clientes y marcas personales.
+                        </p>
+                    </div>
+
+                    <div class="project-detail">
+                        <div class="project-detail-label">Solución</div>
+                        <p class="project-detail-text">
+                            Desarrollo de sitios responsivos con WordPress, HTML, CSS y JavaScript.
+                        </p>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+
+                    <div class="project-role">
+                        <strong>Rol:</strong> Front-End Developer
+                    </div>
+
+                    <a href="caso-paginas-web.html" class="btn-project">
+                        Ver caso completo 
+                        <img src="images/Icons/Investigación.png" alt="Arrow" class="btn-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso Section -->
+    <section class="process" id="proceso">
+        <div class="process-container">
+            <div class="process-header">
+                <div class="section-label">METODOLOGÍA UX</div>
+                <h2 class="section-title">Proceso de trabajo</h2>
+                <p class="projects-description">
+                    Un enfoque estructurado que garantiza soluciones centradas en el usuario, desde la investigación inicial hasta la evaluación final.
+                </p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">1</span>
+                        <img src="images/Icons/Investigación UX.gif" alt="Investigación">
+                    </div>
+                    <h4 class="step-title">Investigación</h4>
+                    <p class="step-description">Entrevistas, encuestas y análisis para entender usuarios y contexto</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">2</span>
+                        <img src="images/Icons/target.gif" alt="Definición">
+                    </div>
+                    <h4 class="step-title">Definición</h4>
+                    <p class="step-description">Identificación clara del problema y objetivos a resolver</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">3</span>
+                        <img src="images/Icons/monitor.gif" alt="Arquitectura">
+                    </div>
+                    <h4 class="step-title">Arquitectura</h4>
+                    <p class="step-description">Estructura del contenido, flujos y navegación</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">4</span>
+                         <img src="images/Icons/wireframe.gif" alt="Wireframes">
+                    </div>
+                    <h4 class="step-title">Wireframes</h4>
+                    <p class="step-description">Bocetos de baja fidelidad en Figma</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">5</span>
+                        <img src="images/Icons/Diseño Visual.gif" alt="Diseño UI">
+                    </div>
+                    <h4 class="step-title">Diseño UI</h4>
+                    <p class="step-description">Interfaces visuales, sistemas de diseño y componentes</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">6</span>
+                        <img src="images/Icons/Front-End Dev.gif" alt="Implementación">
+                    </div>
+                    <h4 class="step-title">Implementación</h4>
+                    <p class="step-description">Desarrollo front-end con HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <span class="step-number">7</span>
+                        <img src="images/Icons/bar-chart.gif" alt="Evaluación">
+                    </div>
+                    <h4 class="step-title">Evaluación</h4>
+                    <p class="step-description">Tests de usabilidad, iteración y mejora continua</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section class="skills" id="habilidades">
+        <div class="skills-container">
+            <div class="skills-header">
+                <div class="section-label">COMPETENCIAS</div>
+                <h2 class="section-title">Habilidades</h2>
+                <p class="projects-description">
+                    Competencias técnicas y de diseño que me permiten abordar proyectos de manera integral, desde la investigación hasta la implementación.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Card 1: UX/UI -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon">
+                            <img src="images/Icons/browser.png" alt="UX/UI">
+                        </div>
+                        <h3 class="skill-card-title">UX/UI</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Investigación de usuarios</li>
+                        <li class="skill-item">User personas</li>
+                        <li class="skill-item">Arquitectura de información</li>
+                        <li class="skill-item">Prototipado (Figma)</li>
+                        <li class="skill-item">Pruebas de usabilidad</li>
+                        <li class="skill-item">Design Thinking</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: UI & Visual -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon">
+                            <img src="images/Icons/view (1).png" alt="UI Visual">
+                        </div>
+                        <h3 class="skill-card-title">UI & Visual</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Diseño de interfaces</li>
+                        <li class="skill-item">Sistemas de diseño</li>
+                        <li class="skill-item">Accesibilidad (WCAG)</li>
+                        <li class="skill-item">Diseño responsivo</li>
+                        <li class="skill-item">Tipografía y color</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Front-End -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon">
+                            <img src="images/Icons/resize.png" alt="Front-End">
+                        </div>
+                        <h3 class="skill-card-title">Front-End</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">HTML5 / CSS3</li>
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">React</li>
+                        <li class="skill-item">WordPress</li>
+                        <li class="skill-item">Git / GitHub</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Diferencial -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon">
+                            <img src="images/Icons/multimedia.png" alt="Diferencial">
+                        </div>
+                        <h3 class="skill-card-title">Diferencial</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">IA aplicada a interfaces</li>
+                        <li class="skill-item">Realidad aumentada (WebXR)</li>
+                        <li class="skill-item">Gamificación</li>
+                        <li class="skill-item">Multimedia Interactiva</li>
+                        <li class="skill-item">Animación</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contacto">
+        <div class="cta-container">
+            <div class="cta-badge">
+                <img src="images/Icons/UNI.png" alt="Lightning" class="badge-icon-img">
+                Abierto a oportunidades
+            </div>
+            <h2 class="cta-title">¿Trabajamos juntos?</h2>
+            <p class="cta-description">
+                Busco prácticas profesionales donde pueda aportar mis habilidades de diseño UX/UI y desarrollo front-end. ¡Conversemos sobre cómo puedo agregar valor a tu equipo!
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:brian@ejemplo.com" class="btn-cta-primary">
+                    <img src="images/Icons/email (1).gif" alt="Mail" class="btn-icon">
+                    Enviar email
+                </a>
+                <a href="#" class="btn-cta-secondary">
+                    <img src="images/Icons/file.png" alt="Download" class="btn-icon">
+                    Descargar CV
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <img src="images/Icons/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com" target="_blank" class="social-link">
+                    <img src="images/Icons/github.png" alt="GitHub">
+                </a>
+                <a href="mailto:brian@ejemplo.com" class="social-link">
+                    <img src="images/Icons/mail.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                © 2026 Brian Jiménez Korzelius. Diseñado con pensamiento UX.
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/brian-jimenez-korzelius-28ab1a206/" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="https://github.com/BrianJIKO" target="_blank" class="footer-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+</body>
+</html>
